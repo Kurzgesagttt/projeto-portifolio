@@ -3,10 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animate": "^1.0.0",
     "cra-template": "1.2.0",
+    "rc-progress": "^4.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.12.2",
+    "react-vertical-timeline-component": "^3.5.3",
+    "sass": "^1.84.0",
+    "simple": "^0.2.0",
+    "tsparticles": "^3.8.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
