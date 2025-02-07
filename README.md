@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## What is needed to run the project at your PC
+
+Open the terminal at the project's root folder and run the lines below
+
+### `npm install react-router-dom react-tsparticles tsparticles react-simple-animate sass react-vertical-timeline-component rc-progress`
+
 ## Available Scripts
 
 In the project directory, you can run:
