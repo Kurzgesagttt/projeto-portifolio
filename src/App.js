@@ -6,6 +6,7 @@ import Contact from './containers/contact';
 import Resume from './containers/resume';
 import Portifolio from './containers/portifolio';
 import Skills from './containers/skills';
+import NavBar from './componets/navBar';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       {/* particles js*/}
 
       {/* navbar */}
+      <NavBar/>
 
       {/* main page content */}
       <Routes>
