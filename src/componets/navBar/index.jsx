@@ -45,11 +45,11 @@ const NavBar = () => {
                     </Link>
 
                 </div>
-                <ul className="navbar_container_menu">
+                <ul className={`navbar_container_menu ${toggleIcon ? "active" : ""}`}>
                     {
                         data.map((item, key) => (
                             <li key={key} className="navbar_container_menu_item">
-                                <Link className="navbar_container_menu_menu_item_link">
+                                <Link className="navbar_container_menu_item_links">
                                     {item.label}
                                 </Link>
                             </li>
