@@ -2,7 +2,7 @@
 
 Open the terminal at the project's root folder and run the lines below
 
-### `npm install react-router-dom react-tsparticles tsparticles react-simple-animate sass react-vertical-timeline-component rc-progress react-icons`
+### `npm install react-router-dom @tsparticles/react @tsparticles/engine @tsparticles/slim react-simple-animate sass react-vertical-timeline-component rc-progress react-icons`
 
 ## Available Scripts
 

@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
+import { initParticlesEngine } from "@tsparticles/react";
 import Home from './containers/home';
 import About from './containers/about';
 import Contact from './containers/contact';
@@ -7,21 +8,21 @@ import Resume from './containers/resume';
 import Portifolio from './containers/portifolio';
 import Skills from './containers/skills';
 import NavBar from './componets/navBar';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import particles from './utils/particles.js';
+import ParticlesComponent from './utils/particles';
+import { loadSlim } from "@tsparticles/slim";
 
 function App() {
 
-  const handleInit = async (main) => {
-    await loadFull(main)
-  }
+  const handleInit = async () => {
+    await initParticlesEngine(async (engine) => {
+      await loadSlim(engine); // ou outro preset necessário
+    });
+  };
 
   return (
     <div className="App">
       {/* particles js*/}
-
-      <Particles id='particles' options={particles} init={handleInit}/>
+      <ParticlesComponent id='particles' init={handleInit}/>
 
       {/* navbar */}
       <NavBar/>
